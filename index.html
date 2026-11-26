@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en" class="js"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aviation Watch Signed by Named Artisans | MHP, French Watch House</title>
+<meta name="description" content="MHP – Maison Horlogère Palmer: independent French aviation watches with hand-guilloché dials, signed by named artisans. Book a private viewing in Paris.">
+<link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#f7f4ee;--sand:#efe6d6;--paper:#fbf9f5;--ink:#1a1714;--muted:#6b6358;--gold:#c9a66b;--goldtx:#8a6a35;--line:#ddd3c2;--night:#050505;--light:#f2ede4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font:300 15px/1.65 Inter,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+.banner{background:var(--gold);color:#020202;font-size:11px;letter-spacing:.08em;text-align:center;padding:6px;font-weight:500}
+
+/* ===== the guilloché motif: "grains de riz" drawn in CSS, reused everywhere ===== */
+.guilloche{background-image:radial-gradient(circle at 50% 50%,transparent 0 2px,rgba(201,166,107,.18) 2px 2.6px,transparent 2.6px),radial-gradient(circle at 50% 50%,transparent 0 2px,rgba(201,166,107,.18) 2px 2.6px,transparent 2.6px);background-size:12px 7px;background-position:0 0,6px 3.5px}
+
+/* ===== header: centred logo, menu below (jewellery-house pattern) ===== */
+header{position:sticky;top:0;z-index:40;background:rgba(247,244,238,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.htop{position:relative;display:flex;justify-content:center;align-items:center;padding:14px 56px 6px}
+.hl{position:absolute;top:50%;transform:translateY(-50%);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.hl.left{left:56px}.hl.right{right:56px}
+.hl a{text-decoration:none;margin-right:18px}.hl.right a{margin:0 0 0 18px}
+.hl a:hover{opacity:.6}
+.sel{background:none;border:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:uppercase;margin-left:14px;cursor:pointer;-webkit-appearance:none;appearance:none}
+.sel option{color:#1a1714}
+.names{max-width:900px;margin:18px auto 0;text-align:center;font-family:'Ibarra Real Nova',serif;font-size:20px;line-height:1.5}
+.logo img{height:58px;width:auto;display:block;transition:height .35s}
+header.small .logo img{height:34px}
+nav#mainnav{display:flex;justify-content:center;padding:6px 56px 14px}
+.mbtn,nav#mainnav>a{background:none;border:0;margin:0 18px;color:var(--ink);font:400 11px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;padding:0 0 4px;border-bottom:1px solid transparent;text-decoration:none}
+.mbtn:hover,.mbtn[aria-expanded="true"],nav#mainnav>a:hover{border-color:var(--ink)}
+.burger{display:none;background:none;border:1px solid var(--line);color:var(--ink);font:400 13px Inter;padding:6px 11px;cursor:pointer}
+
+/* mega menu: photos only, names appear on hover */
+.mega{position:absolute;left:0;right:0;top:100%;background:var(--ivory);border-bottom:1px solid var(--line);box-shadow:0 24px 40px rgba(26,23,20,.10);padding:28px 56px 36px;z-index:55;animation:mfade .35s ease}
+.mega[hidden]{display:none}
+@keyframes mfade{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1080px;margin:0 auto}
+.mt{position:relative;display:block;overflow:hidden;aspect-ratio:4/3;background:var(--sand)}
+#m-watches .mt img,.mt img.pr{object-fit:contain;background:var(--paper);padding:6%}
+.mt img,.mt .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.mt:hover img,.mt:hover .ph,.mt:focus img{transform:scale(1.1)}
+.mt .ph{display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.mt .ph.guilloche{background-color:var(--sand)}
+.mt .nm{position:absolute;left:0;right:0;bottom:0;padding:14px;color:var(--light);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;background:linear-gradient(0deg,rgba(5,5,5,.7),rgba(5,5,5,0));opacity:0;transform:translateY(8px);transition:.45s}
+.mt:hover .nm,.mt:focus .nm{opacity:1;transform:none}
+
+.mwrap{display:grid;grid-template-columns:minmax(240px,1fr) 2.4fr;gap:44px;max-width:1240px;margin:0 auto;align-items:start}
+.mlist{display:grid;grid-template-columns:1fr;gap:26px}
+.mcol h5{font:500 10px Inter,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.mcol a{display:block;padding:5px 0;font-family:'Ibarra Real Nova',serif;font-size:17px;text-decoration:none;color:var(--ink);transition:color .3s,padding .3s}
+.mcol a:hover{opacity:.6;padding-left:6px}
+.mgrid.g8{grid-template-columns:repeat(4,1fr);max-width:none;margin:0}
+.mgrid.g4{grid-template-columns:repeat(2,1fr);max-width:none;margin:0}
+.mgrid.g4 .mt{aspect-ratio:16/10}.mgrid.g8 .mt{aspect-ratio:1}
+.mt.hot img,.mt.hot .ph{transform:scale(1.1)}.mt.hot .nm{opacity:1;transform:none}
+.mega .mgrid .mt{opacity:1;transition:opacity .4s}.mega .mgrid.dim .mt:not(.hot){opacity:.45}
+/* ===== chapters ===== */
+.hero{position:relative;height:calc(100vh - 150px);min-height:560px;overflow:hidden;background:var(--night)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,5,5,.75) 0%,rgba(5,5,5,0) 55%)}
+.herotxt{position:absolute;left:0;right:0;bottom:64px;z-index:2;text-align:center;color:var(--light)}
+h1{font-family:'Ibarra Real Nova',serif;font-weight:400;font-size:58px;line-height:1.05;letter-spacing:.005em}
+.link{display:inline-block;margin-top:22px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px}
+.link:hover{opacity:.6}
+.cue{position:absolute;left:50%;bottom:18px;z-index:2;width:1px;height:34px;background:linear-gradient(var(--gold),transparent);animation:cue 2.2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+.chapter{position:relative}
+.word{font-family:'Ibarra Real Nova',serif;font-weight:400;font-size:46px;line-height:1.1}
+
+/* I. craft: sticky film-like frame that zooms as you scroll */
+.craft{height:340vh;background:var(--night)}
+.craft .stick{position:sticky;top:0;height:100vh;overflow:hidden}
+.craft .stick img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(var(--z,1.25));transition:transform .1s linear,opacity 1s ease;filter:brightness(.82);opacity:0}
+.craft .stick img.on{opacity:1}
+.sigs{list-style:none;display:flex;gap:22px;margin:16px 0 4px}
+.sigs li{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--light);opacity:.35;transition:opacity .6s;padding-bottom:4px;border-bottom:1px solid transparent}
+.sigs li.lit{opacity:1;border-color:var(--gold)}
+.sigs{margin-bottom:34px}.sigs li{position:relative}.sigs li i{position:absolute;left:0;top:100%;margin-top:8px;opacity:0;font:400 16px "Ibarra Real Nova",serif;letter-spacing:0;text-transform:none;color:var(--light);transition:opacity .6s}
+.sigs li.lit i{opacity:1;white-space:nowrap}
+.craft .stick:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,5,5,.78) 0%,rgba(5,5,5,0) 48%);pointer-events:none}
+.craft .cap,.craft .count{z-index:2}
+.craft .cap{position:absolute;left:56px;bottom:56px;color:var(--light)}
+.craft .count{position:absolute;right:56px;bottom:56px;color:var(--light);font-family:'Ibarra Real Nova',serif;font-size:96px;line-height:1}
+.craft .count small{display:block;font:300 11px Inter;letter-spacing:.22em;text-transform:uppercase;color:var(--light);text-align:right;margin-top:6px}
+
+/* four gestures: vertical films play only when on screen */
+.gestures{background:var(--night);padding:0 56px 110px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:0 auto}
+.g3 figure{position:relative;aspect-ratio:9/16;overflow:hidden;background:#141210}
+.g3 video{width:100%;height:100%;object-fit:cover;filter:saturate(.85);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.g3 figure:hover video{transform:scale(1.04)}
+.g3 figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px;color:var(--light);font-family:'Ibarra Real Nova',serif;font-size:22px;background:linear-gradient(0deg,rgba(5,5,5,.7),rgba(5,5,5,0))}
+/* artisans: black & white portraits warm up to colour on hover */
+.hands{padding:110px 56px;text-align:center}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:46px auto 0}
+.who{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;text-decoration:none;background:var(--sand)}
+.who img,.who .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter 1s ease,transform 1.2s ease}
+.who:hover img,.who:hover .ph{filter:grayscale(0);transform:scale(1.05)}
+.who .ph{display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding:20px}
+.who .nm{position:absolute;left:0;right:0;bottom:0;padding:22px;color:var(--light);text-align:left;background:linear-gradient(0deg,rgba(5,5,5,.75),rgba(5,5,5,0))}
+.who .nm b{display:block;font-family:'Ibarra Real Nova',serif;font-weight:400;font-size:24px}
+.who .nm span{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--light)}
+
+/* II. your piece: horizontal drag gallery of the 8 references */
+.yours{padding:110px 0 90px;background:var(--paper);border-top:1px solid var(--line)}
+.yours .head{padding:0 56px;display:flex;justify-content:space-between;align-items:end;gap:24px}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:40px 56px 18px;scrollbar-width:thin;cursor:grab}
+.rail::-webkit-scrollbar{height:3px}.rail::-webkit-scrollbar-thumb{background:var(--gold)}
+.tabs button{background:none;border:0;border-bottom:1px solid transparent;margin-left:24px;padding:0 0 4px;font:400 11px Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+.tabs button{opacity:.5}.tabs button.on,.tabs button:hover{opacity:1;border-color:var(--ink)}
+.ref.hide{display:none}
+.ref{flex:0 0 300px;scroll-snap-align:start;text-decoration:none;text-align:center}
+.ref .frame{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--sand)}
+.ref .frame img{width:100%;height:100%;object-fit:contain;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.ref:hover .frame img{transform:scale(1.08)}
+.ref .frame .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background-color:var(--sand);transition:transform 1s}
+.ref:hover .frame .ph{transform:scale(1.05)}
+.ref b{display:block;font-family:'Ibarra Real Nova',serif;font-weight:400;font-size:19px;margin-top:14px}
+.ref span{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink)}
+.ref em{display:block;font-style:normal;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);margin-top:4px}
+
+/* III. experience: four words, one gesture */
+.exp{display:grid;grid-template-columns:1.15fr 1fr;min-height:100vh;background:var(--night);color:var(--light)}
+.exp .pic{position:relative;overflow:hidden}
+.exp .pic img,.exp .pic .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.exp .pic img{opacity:0;transform:scale(1.06);transition:opacity 1.2s ease,transform 6s ease}
+.exp .pic img.on{opacity:1;transform:scale(1)}
+.exp .pic .ph{display:flex;align-items:center;justify-content:center;background:#141210;color:var(--light);font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:30px}
+.exp .txt{display:flex;flex-direction:column;justify-content:center;padding:80px 72px}
+.steps{list-style:none;margin:40px 0 44px}
+.steps li{display:flex;align-items:baseline;gap:22px;padding:16px 0;border-top:1px solid rgba(242,237,228,.16);font-family:'Ibarra Real Nova',serif;font-size:30px;opacity:.35;transition:opacity .6s}
+.steps li.lit{opacity:1}
+.steps li{cursor:pointer}
+.steps li span{font:400 10px Inter;letter-spacing:.2em;color:var(--light)}
+.cta{display:inline-block;align-self:flex-start;padding:16px 28px;border:1px solid var(--light);color:var(--light);font:500 11px Inter;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;transition:.3s}
+.cta:hover{background:var(--light);color:var(--ink)}
+
+/* IV. encounters: four doors, one per place */
+.enc{padding:110px 56px;background:var(--ivory)}
+.encg{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.ev{text-decoration:none;display:block}
+.ev .pic{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--night)}
+.ev .pic.light{background:var(--sand)}
+.ev .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.ev .pic.light img{object-fit:contain;padding:8%}
+.ev .pic .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background-color:var(--sand)}
+.ev:hover .pic img{transform:scale(1.06)}
+.ev .pic video{width:100%;height:100%;object-fit:cover}
+.exp .pic video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}.exp .pic video.on{opacity:1}
+.ev span{display:block;margin-top:14px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.ev b{display:block;font-family:'Ibarra Real Nova',serif;font-weight:400;font-size:21px;margin-top:4px}
+/* IV. pioneers: parallax image{position:relative;height:90vh;min-height:520px;overflow:hidden;background:var(--night)}
+
+/* trust: three marks{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* logbook: newsletter, MHP's own name for it */
+.log{padding:100px 56px;text-align:center}
+.log .form{display:flex;justify-content:center;gap:0;margin-top:30px}
+.log input{background:transparent;border:0;border-bottom:1px solid var(--ink);padding:12px 4px;min-width:320px;font:300 15px Inter;color:var(--ink)}
+.log button{background:none;border:0;border-bottom:1px solid var(--ink);padding:12px 6px;font:500 11px Inter;letter-spacing:.22em;text-transform:uppercase;cursor:pointer}
+.log button:hover{opacity:.6}
+
+footer{padding:52px 56px 26px;background:var(--night);color:var(--light);font-size:12.5px}
+.fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-bottom:34px}
+.fcols h4{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--light);font-weight:500;margin-bottom:12px}
+.fcols a{display:block;text-decoration:none;padding:3px 0;color:var(--light)}
+.fcols a:hover{opacity:.6}
+.fnote{border-top:1px solid #2a2622;padding-top:18px;font-size:11px}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.hero video{display:none}.cue{animation:none}}
+
+@media(max-width:1100px){.burger{display:block}.hl.left,.hl.right a{display:none}.hl.right{right:24px}.htop{padding:12px 24px}.logo img{height:40px}
+ nav#mainnav{display:none;flex-direction:column;align-items:flex-start;padding:10px 24px 18px}nav#mainnav.open{display:flex}.mbtn,nav#mainnav>a{margin:10px 0}
+ .mega{position:static;box-shadow:none;padding:12px 24px 22px}.mwrap{grid-template-columns:1fr;gap:20px}.mlist{grid-template-columns:1fr 1fr}.mgrid.g8{grid-template-columns:repeat(2,1fr)}.mgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){h1{font-size:38px}.word{font-size:32px}.hands,.log{padding:72px 24px}.trio{grid-template-columns:1fr 1fr}.enc{padding:72px 24px}.encg{grid-template-columns:1fr 1fr}.gestures{padding:0 24px 72px}.g3{grid-template-columns:repeat(3,1fr);gap:8px}.g3 figcaption{font-size:15px;padding:12px}.yours .head{padding:0 24px;flex-direction:column;align-items:flex-start}.rail{padding:28px 24px 14px}.ref{flex-basis:240px}
+ .exp{grid-template-columns:1fr}.exp .pic{height:60vh}.exp .txt{padding:56px 24px}.craft .cap{left:24px;bottom:32px}.craft .count{right:24px;bottom:auto;top:96px;font-size:52px}.sigs{gap:14px}.tabs button{margin:0 18px 0 0}.fcols{grid-template-columns:1fr 1fr}footer{padding:44px 24px 24px}.log input{min-width:0;width:100%}.log .form{flex-direction:column}}
+.doors{display:flex;justify-content:center;gap:34px}
+.feature{display:grid;grid-template-columns:1fr 1fr;background:var(--paper);border-top:1px solid var(--line)}
+.fpic{display:block;position:relative;aspect-ratio:1;overflow:hidden;background:var(--sand)}
+.fpic img{width:100%;height:100%;object-fit:contain;padding:8%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.fpic:hover img{transform:scale(1.06)}
+.ftxt{display:flex;flex-direction:column;justify-content:center;padding:80px 72px}
+.ftxt p{margin-top:16px}.ftxt .ed{font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-top:8px}
+.fcta{display:flex;align-items:center;gap:30px;margin-top:34px}.fcta .link{margin-top:0}
+.cta.dark{border-color:var(--ink);color:var(--ink)}.cta.dark:hover{background:var(--ink);color:var(--light)}
+.ghead{max-width:1180px;margin:0 auto;padding:100px 0 40px;color:var(--light)}
+.hands .link{margin-top:40px}
+.maison{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--ivory);border-top:1px solid var(--line)}
+.mtxt{padding:110px 72px;display:flex;flex-direction:column;justify-content:center}.mtxt p{margin-top:20px;max-width:460px}
+.mpic{position:relative;min-height:520px}
+.brief{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:34px;background-color:var(--sand);color:var(--ink);text-align:left;font-size:12.5px;line-height:1.55;border:1px dashed var(--ink)}
+.brief span{font:500 10px Inter;letter-spacing:.22em;text-transform:uppercase}
+.brief strong{font:400 22px 'Ibarra Real Nova',serif;margin:8px 0 12px}
+.brief ul{list-style:none}.brief li{margin:4px 0}.brief li b{font-weight:500}
+.ev .pic .brief{padding:20px;font-size:11.5px}.ev .pic .brief strong{font-size:18px}
+.steps li{flex-wrap:wrap}.steps li em{flex-basis:100%;padding-left:42px;font:300 13px Inter;letter-spacing:0;color:var(--light);margin-top:4px;display:none}.steps li.lit em{display:block}
+.past{display:flex;flex-wrap:wrap;gap:8px 34px;align-items:baseline;margin-top:44px;padding-top:22px;border-top:1px solid var(--line)}
+.past span{font:500 10.5px Inter;letter-spacing:.2em;text-transform:uppercase;margin-right:10px}
+.past p{font-family:'Ibarra Real Nova',serif;font-size:18px}
+.log p{margin-top:10px}
+.mtxt .link,.hands .link{align-self:flex-start}.hands .link{align-self:auto}
+.ev .pic .brief li b,.brief li b{display:inline;font:500 11.5px Inter,sans-serif;margin:0;letter-spacing:0}
+@media(max-width:600px){.encg{grid-template-columns:1fr}.ev .pic{aspect-ratio:4/5}}
+@media(max-width:900px){.feature,.maison{grid-template-columns:1fr}.ftxt,.mtxt{padding:56px 24px}.fcta{flex-wrap:wrap;gap:18px}.ghead{padding:64px 0 28px}.mpic{min-height:440px}.doors{flex-direction:column;gap:0;align-items:center}}
+
+/* v9 (Lisa): minimal, no small capitals, no overtitles or subtitles */
+.hl,.hl a,.mbtn,nav#mainnav>a,.mcol h5,.mt .nm,.link,.cta,.sigs li,.tabs button,.ref span,.ref em,.ev span,.past span,.brief span,.fcols h4,.log button,.steps li span,.who .nm span,.mt .ph,.ev .pic .ph,.ref .frame .ph,.who .ph,.sel,.exp .pic .ph{text-transform:none!important;letter-spacing:.01em!important;font-family:Inter,sans-serif!important}
+.hl,.hl a,.sel{font-size:13px}
+.mbtn,nav#mainnav>a{font-size:14px;font-weight:400}
+.mcol h5{font-size:13px;font-weight:500}
+.link,.cta,.log button,.tabs button{font-size:14px;font-weight:400}
+.cta{padding:14px 26px}
+.sigs li{font-size:15px}
+.sigs li i{font:300 16px Inter,sans-serif!important;letter-spacing:0}
+.ref span,.ref em,.ev span,.past span,.fcols h4,.mt .nm{font-size:13px}
+.brief span{font-size:12px;font-weight:500}
+.g3{grid-template-columns:repeat(4,1fr)}
+.ghead{padding-top:110px}.word{margin:0}
+.craft .count small{text-transform:none!important;letter-spacing:.01em!important;font:300 14px Inter,sans-serif!important}
+@media(max-width:900px){.g3{grid-template-columns:repeat(2,1fr)}}
+
+/* v10 (Lisa): symbol-only logo, menu lists in Inter, mega photos without captions */
+.banner{text-transform:none;letter-spacing:.01em;font-size:13px}
+.logo img{height:46px}header.small .logo img{height:30px}
+.mcol a{font:300 14.5px Inter,sans-serif;letter-spacing:.01em;padding:6px 0}
+.mcol h5{margin-bottom:6px}
+.mega .mt .nm{display:none!important}
+
+/* v11: closer to high-end watch sites */
+.craft{height:220vh}
+header.small .hl.left{opacity:0;pointer-events:none}header.small .htop{padding-top:8px;padding-bottom:2px}header.small nav#mainnav{padding-bottom:8px}
+.hl,.htop,nav#mainnav{transition:all .35s}
+.ic{display:inline-flex;vertical-align:middle}
+.hands.dark{background:var(--night);color:var(--light);padding-top:40px}.hands.dark .names,.hands.dark .link{color:var(--light)}
+.movement{position:relative;height:90vh;min-height:520px;overflow:hidden;background:var(--night)}
+.movement img{width:100%;height:100%;object-fit:cover;filter:brightness(.8)}
+.mvtxt{position:absolute;left:72px;bottom:64px;color:var(--light)}
+.fpic .brief{position:absolute;inset:0}
+.ftrust{display:flex;flex-wrap:wrap;gap:10px 40px;padding:0 0 22px;font-size:13px}
+.yours{padding:150px 0 120px}.enc{padding:150px 56px}.log{padding:140px 56px}.hands{padding-bottom:150px}.ftxt,.mtxt{padding:120px 88px}.ghead{padding-top:150px;padding-bottom:56px}
+.js .rv{transition:opacity 1.6s ease,transform 1.6s ease}
+.craft .stick img{transition:transform .1s linear,opacity 1.6s ease}
+@media(max-width:900px){.mvtxt{left:24px;bottom:32px}.movement{height:70vh}.yours{padding:90px 0 70px}.enc,.log{padding:80px 24px}.ftxt,.mtxt{padding:64px 24px}.ghead{padding-top:80px}}
+.fpic.photo img{object-fit:cover;padding:0}.fpic.photo{aspect-ratio:4/5}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "MHP Horlogerie", "alternateName": "Maison Horlogère Palmer", "url": "https://mhp-horlogerie.com", "foundingDate": "2025-06-19", "foundingLocation": {"@type": "Place", "name": "Bretteville-sur-Odon, Normandy, France"}, "founder": [{"@type": "Person", "name": "Michael Ondet"}, {"@type": "Person", "name": "Fabien Palmer"}], "address": {"@type": "PostalAddress", "streetAddress": "30 Rue Danielle Casanova", "postalCode": "75002", "addressLocality": "Paris", "addressCountry": "FR"}, "@id": "https://lisa453616.github.io/mhp/#org", "logo": "https://lisa453616.github.io/mhp/media/b17427290bcb.png", "sameAs": ["https://www.instagram.com/mhp.horlogerie/", "https://www.linkedin.com/company/maison-horlogère-palmer/"]}</script>
+</head>
+<body>
+<div class="banner">Concept proposal for MHP · Group 2</div>
+<header id="hdr">
+ <div class="htop"><div class="hl left"><a href="#experience">Book a private viewing</a><a href="#trust">Contact</a></div>
+  <a class="logo" href="#top"><img src="media/75696d5621c1.png" alt="MHP Maison Horlogère Palmer logo"></a>
+  <div class="hl right"><a href="./" aria-label="Search" class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></a><select class="sel" aria-label="Language"><option>EN</option><option>FR</option></select><select class="sel" aria-label="Currency"><option>EUR</option><option>USD</option><option>GBP</option><option>CHF</option></select><a href="./" aria-label="Account" class="ic"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a> <button class="burger" aria-label="Open menu">☰</button></div></div>
+ <nav id="mainnav"><button class="mbtn" data-p="m-watches" aria-expanded="false">Watches</button><a href="#encounters">Adrien Closmenil × MHP</a><a href="#encounters">Jules Legoubin × MHP</a><a href="./">Accessories</a><button class="mbtn" data-p="m-maison" aria-expanded="false">Our world</button><button class="mbtn" data-p="m-services" aria-expanded="false">Services</button><a href="#encounters">Events</a></nav>
+ <div class="mega" id="m-watches" hidden><div class="mwrap"><div class="mlist"><div class="mcol"><h5>Grand Classic Atelier</h5><a href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html" data-k="w1">Gold · yellow gold · black dial</a><a href="./" data-k="w2">Gold · white gold · blue dial</a><a href="./" data-k="w3">Steel · black dial</a><a href="./" data-k="w4">Steel · white dial</a></div><div class="mcol"><h5>Grand Polo</h5><a href="./" data-k="w5">Jules Legoubin · titanium</a><a href="./" data-k="w6">Steel · green dial</a><a href="./" data-k="w7">Steel · beige dial</a><a href="./" data-k="w8">Steel · red dial</a></div><div class="mcol"><h5>Discover</h5><a href="./">Limited editions</a><a href="#ch2">All watches</a><a href="#experience">Book a private viewing</a></div></div><div class="mgrid g8"><a class="mt" data-k="w1" href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html"><img src="media/c36d33b7917c.webp" alt="Grand Classic Atelier Gold · 18K yellow gold · black dial" loading="lazy"><span class="nm">Grand Classic Atelier Gold · 18K yellow gold · black dial</span></a><a class="mt" data-k="w2" href="./"><img src="media/5ae5aaebdbee.webp" alt="Grand Classic Atelier Gold · 18K white gold · blue dial" loading="lazy"><span class="nm">Grand Classic Atelier Gold · 18K white gold · blue dial</span></a><a class="mt" data-k="w3" href="./"><img src="media/9d29ca07bef8.webp" alt="Grand Classic Atelier · Steel · black dial" loading="lazy"><span class="nm">Grand Classic Atelier · Steel · black dial</span></a><a class="mt" data-k="w4" href="./"><img src="media/f35852199bef.webp" alt="Grand Classic Atelier · Steel · white dial" loading="lazy"><span class="nm">Grand Classic Atelier · Steel · white dial</span></a><a class="mt" data-k="w5" href="./"><img src="media/0b2779033005.webp" alt="Grand Polo Jules Legoubin · Titanium" loading="lazy"><span class="nm">Grand Polo Jules Legoubin · Titanium</span></a><a class="mt" data-k="w6" href="./"><img src="media/35a913cf2735.webp" alt="Grand Polo · Steel · green dial" loading="lazy"><span class="nm">Grand Polo · Steel · green dial</span></a><a class="mt" data-k="w7" href="./"><img src="media/6878589b91e6.webp" alt="Grand Polo · Steel · beige dial" loading="lazy"><span class="nm">Grand Polo · Steel · beige dial</span></a><a class="mt" data-k="w8" href="./"><img src="media/8c6825e51f4d.webp" alt="Grand Polo · Steel · red dial" loading="lazy"><span class="nm">Grand Polo · Steel · red dial</span></a></div></div></div><div class="mega" id="m-maison" hidden><div class="mwrap"><div class="mlist"><div class="mcol"><h5>Our world</h5><a href="#ch4" data-k="h1">MHP story</a><a href="#ch4" data-k="h1">Michael Ondet &amp; Fabien Palmer</a><a href="#hands" data-k="c2">Our artisans</a><a href="#trust" data-k="h1">Points of sale · Paris, Caen</a></div><div class="mcol"><h5>Savoir-faire</h5><a href="#ch1" data-k="c1">The hand-guilloché dial</a><a href="#ch1" data-k="c1">The four signatures</a><a href="#gestures" data-k="c4">Guillochage, anglage, squelettage, assemblage</a><a href="#hands" data-k="c2">Yann von Kaenel · Maître guillocheur</a><a href="#hands" data-k="c2">Emilien Réverchon · Décorateur horloger</a><a href="#hands" data-k="c2">Jimmy Ferré · Cadranier</a></div><div class="mcol"><h5>Events &amp; news</h5><a href="#encounters" data-k="h4">Deauville · 11–13 June 2027</a><a href="#encounters" data-k="h4">Salons</a><a href="#top">Le carnet de bord</a><a href="https://www.instagram.com/mhp.horlogerie">Instagram</a><a href="https://www.linkedin.com/company/maison-horlogère-palmer/" rel="noopener">LinkedIn</a></div></div><div class="mgrid g4"><a class="mt" data-k="h1" href="./"><img src="media/bb7b991330fa.webp" alt="An MHP movement on its holder, a part lifted with tweezers, on a blue background" loading="lazy"><span class="nm">Our story</span></a><a class="mt" data-k="c1" href="#ch1"><img src="media/16f139895dcd.webp" alt="Close-up of a silver hand-guilloché dial with two counters and openworked hands" loading="lazy"><span class="nm">The hand-guilloché dial</span></a><a class="mt" data-k="c2" href="#hands"><img src="media/7508b1e8f61d.webp" alt="An MHP artisan at the microscope beside a guilloché machine" loading="lazy" style="filter:grayscale(1)"><span class="nm">Our artisans</span></a><a class="mt" data-k="c4" href="#gestures"><img src="media/45eb4c48b2e8.jpg" alt="An MHP artisan engraving a dial on a guilloché machine" loading="lazy"><span class="nm">Four gestures</span></a></div></div></div><div class="mega" id="m-services" hidden><div class="mwrap"><div class="mlist"><div class="mcol"><h5>Services</h5><a href="#experience" data-k="s1">Private viewing</a><a href="#experience" data-k="s1">Paris showroom · by appointment</a><a href="#trust" data-k="s2">5-year warranty</a><a href="#trust" data-k="s3">Engagement &amp; sécurité</a><a href="./" data-k="s4">After-sales service</a><a href="./">FAQ</a></div><div class="mcol"><h5>Contact</h5><a href="#trust">Paris · 30 Rue Danielle Casanova</a><a href="#trust">Caen</a><a href="./">Contact us</a></div></div><div class="mgrid g4"><a class="mt" data-k="s1" href="./"><img src="media/7d7348f1ab23.webp" alt="A Grand Classic Atelier with a blue guilloché dial on the burnt-orange suede viewing cushion" loading="lazy"><span class="nm">Private viewing</span></a><a class="mt" data-k="s2" href="./"><img src="media/2d46691221a5.webp" alt="Macro of a guilloché dial signed Grand Classic" loading="lazy"><span class="nm">Warranty</span></a><a class="mt" data-k="s3" href="./"><img src="media/3a748861ada3.webp" alt="An MHP watch in its open presentation box, beside the MHP box cover" loading="lazy"><span class="nm">Engagement &amp; sécurité</span></a><a class="mt" data-k="s4" href="./"><img src="media/68a727dc82ee.webp" alt="Macro of a black guilloché dial with openworked hands" loading="lazy"><span class="nm">After-sales service</span></a></div></div></div>
+</header>
+
+<main id="top">
+<section class="hero chapter" id="ch0" aria-label="MHP film">
+ <video autoplay muted loop playsinline preload="metadata" poster="media/93632b0d2d51.jpg" aria-label="MHP artisans at work: guillochage, anglage, squelettage and assemblage, then the collection in motion"><source src="media/b118b9e4bc02.mp4" type="video/mp4"></video>
+ <div class="herotxt"><h1>Handcrafted<br>aviation watches</h1><div class="doors"><a class="link" href="#ch2">Discover the watches</a><a class="link" href="#experience">Book a private viewing</a></div></div>
+ <span class="cue" aria-hidden="true"></span>
+</section>
+
+<section class="yours chapter" id="ch2" aria-label="Your piece">
+ <div class="head"><div><div class="word rv">Grand Classic Atelier &amp; Grand Polo</div></div><div class="tabs rv" id="tabs"><button class="on" data-f="">All</button><button data-f="gca">Grand Classic Atelier</button><button data-f="gp">Grand Polo</button></div></div>
+ <div class="rail" id="rail"><a class="ref" data-c="gca" href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html"><div class="frame"><img src="media/c36d33b7917c.webp" alt="Grand Classic Atelier Gold · 18K yellow gold · black dial" loading="lazy"></div><b>Grand Classic Atelier Gold</b><span>18K yellow gold · black dial</span><em>10 pieces · hand-guilloché dial, 6–10 h</em></a><a class="ref" data-c="gca" href="./"><div class="frame"><img src="media/5ae5aaebdbee.webp" alt="Grand Classic Atelier Gold · 18K white gold · blue dial" loading="lazy"></div><b>Grand Classic Atelier Gold</b><span>18K white gold · blue dial</span><em>10 pieces · hand-guilloché dial, 6–10 h</em></a><a class="ref" data-c="gca" href="./"><div class="frame"><img src="media/9d29ca07bef8.webp" alt="Grand Classic Atelier · Steel · black dial" loading="lazy"></div><b>Grand Classic Atelier</b><span>Steel · black dial</span><em>Hand-guilloché dial, 6–10 h</em></a><a class="ref" data-c="gca" href="./"><div class="frame"><img src="media/f35852199bef.webp" alt="Grand Classic Atelier · Steel · white dial" loading="lazy"></div><b>Grand Classic Atelier</b><span>Steel · white dial</span><em>Hand-guilloché dial, 6–10 h</em></a><a class="ref" data-c="gp" href="./"><div class="frame"><img src="media/0b2779033005.webp" alt="Grand Polo Jules Legoubin · Titanium" loading="lazy"></div><b>Grand Polo Jules Legoubin</b><span>Titanium</span><em>25 pieces · grained dial</em></a><a class="ref" data-c="gp" href="./"><div class="frame"><img src="media/35a913cf2735.webp" alt="Grand Polo · Steel · green dial" loading="lazy"></div><b>Grand Polo</b><span>Steel · green dial</span><em>Grained dial</em></a><a class="ref" data-c="gp" href="./"><div class="frame"><img src="media/6878589b91e6.webp" alt="Grand Polo · Steel · beige dial" loading="lazy"></div><b>Grand Polo</b><span>Steel · beige dial</span><em>Grained dial</em></a><a class="ref" data-c="gp" href="./"><div class="frame"><img src="media/8c6825e51f4d.webp" alt="Grand Polo · Steel · red dial" loading="lazy"></div><b>Grand Polo</b><span>Steel · red dial</span><em>Grained dial</em></a></div>
+</section>
+
+<section class="feature" id="focus" aria-label="In focus"><a class="fpic photo" href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html"><img src="media/f291e924fb2e.webp" alt="Grand Classic Atelier Gold, 18K yellow gold, on the wrist with a leather flight jacket" loading="lazy"></a><div class="ftxt"><div class="word rv">Grand Classic Atelier Gold</div><p class="rv">18K yellow gold · hand-guilloché dial · 10 pieces</p><div class="fcta rv"><a class="cta dark" href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html">Discover the piece</a><a class="link" href="#experience">Book a private viewing</a></div></div></section>
+
+<section class="craft chapter" id="ch1" aria-label="The signature">
+ <div class="stick">
+  <img class="sig on" src="media/16f139895dcd.webp" alt="Signature 1: the openworked hands over a silver hand-guilloché dial">
+  <img class="sig" src="media/574c15e79246.webp" alt="Signature 2: the open lugs, Grand Polo green dial">
+  <img class="sig" src="media/172aff95d4a6.webp" alt="Signature 3: the bezel, Grand Polo beige dial">
+  <img class="sig" src="media/7183552689ce.webp" alt="Signature 4: the aviation crown and the MHP shield">
+  <div class="cap"><div class="word">The details on every MHP</div>
+   <ol class="sigs" id="sigs"><li class="lit">Hands<i>inspired by aviation</i></li><li>Lugs<i>cut by electro-erosion</i></li><li>Bezel<i>concave</i></li><li>Crown<i>large, in the aviation tradition</i></li></ol>
+   <a class="link" href="#gestures">See the hands at work</a></div>
+  <div class="count"><span id="hours">I</span><small>of four</small></div></div>
+</section>
+
+<section class="gestures" id="gestures" aria-label="Four gestures">
+ <div class="ghead"><div class="word rv">Guillochage, anglage, squelettage, assemblage</div></div>
+ <div class="g3">
+  <figure class="rv"><video muted loop playsinline preload="none" poster="media/45eb4c48b2e8.jpg" aria-label="Guillochage: engraving a dial by hand on a guilloché machine"><source src="media/8d74c70331b9.mp4" type="video/mp4"></video><figcaption>Guillochage</figcaption></figure>
+  <figure class="rv"><video muted loop playsinline preload="none" poster="media/6d3f3cdde192.jpg" aria-label="Anglage: hand-bevelling the edges of a movement part"><source src="media/c79495e3c0c1.mp4" type="video/mp4"></video><figcaption>Anglage</figcaption></figure>
+  <figure class="rv"><video muted loop playsinline preload="none" poster="media/b747aae0691b.jpg" aria-label="Squelettage: openworking a part by hand"><source src="media/d57eeb99c234.mp4" type="video/mp4"></video><figcaption>Squelettage</figcaption></figure>
+  <figure class="rv"><video muted loop playsinline preload="none" poster="media/c07da7fa89d2.jpg" aria-label="Assemblage: assembling an MHP movement by hand"><source src="media/3611e7322ed2.mp4" type="video/mp4"></video><figcaption>Assemblage</figcaption></figure>
+ </div>
+</section>
+
+<section class="hands dark" id="hands" aria-label="The artisans">
+ <p class="names rv">Yann von Kaenel, Maître guillocheur · Emilien Réverchon, Décorateur horloger · Jimmy Ferré, Cadranier</p>
+ <div class="trio">
+  <a class="who rv" href="./"><img src="media/7508b1e8f61d.webp" alt="An MHP artisan at the microscope beside a guilloché machine" loading="lazy" style="object-position:68% 40%"></a>
+  <a class="who rv" href="./"><img src="media/6d6ab715629d.webp" alt="An MHP watchmaker smiling at his workbench in the atelier" loading="lazy" style="object-position:38% 40%"></a>
+  <a class="who rv" href="./"><img src="media/7317e065a117.webp" alt="An MHP artisan designing a dial on a computer" loading="lazy" style="object-position:34% 40%"></a>
+ </div>
+ <a class="link rv" href="./">Meet our artisans</a>
+</section>
+
+<section class="movement" id="movement" aria-label="The movement"><img src="media/bb7b991330fa.webp" alt="An MHP movement on its holder, a part lifted with tweezers, on a blue background" loading="lazy"><div class="mvtxt"><div class="word rv">The movement</div></div></section>
+
+<section class="maison" id="ch4" aria-label="The maison"><div class="mtxt"><div class="word rv">Maison Horlogère Palmer,<br>Normandy, 2025</div><p class="rv">Founded on 19 June 2025 in Bretteville-sur-Odon by Michael Ondet and Fabien Palmer.</p><a class="link rv" href="./">Our story</a></div><div class="mpic"><div class="brief"><span>Media brief · to shoot</span><strong>The founders, at the atelier</strong><ul><li><b>Subject:</b> Michael Ondet and Fabien Palmer at the bench, a watch in hand, looking at it, not at the camera.</li><li><b>Format:</b> one horizontal photo 3:2 for the site, one vertical 4:5 for Instagram and LinkedIn.</li><li><b>Light:</b> daylight from a window, warm, no studio flash; black and white version like the artisans.</li><li><b>Why:</b> James buys from people he trusts. Today the founders have no face on the homepage or on LinkedIn.</li></ul></div></div></section>
+
+<section class="exp chapter" id="experience" aria-label="The experience">
+ <div class="pic" id="exppic"><video class="on" autoplay muted loop playsinline preload="metadata" poster="media/92d80dd87890.jpg" aria-label="Meet: from Place Vendôme to a private viewing in Paris"><source src="media/2d7078fa4a0d.mp4" type="video/mp4"></video><img src="media/2aaaa4ac0d6c.webp" alt="Reserve: the Grand Classic Atelier white gold, blue dial, tried on at the desk" loading="lazy"><img src="media/68a727dc82ee.webp" alt="Follow: macro of a black guilloché dial with openworked hands" loading="lazy"><img src="media/1ccab28c2a6a.webp" alt="Receive: a Grand Classic Atelier on the wrist, Place Vendôme" loading="lazy" style="object-position:62% 50%"></div>
+ <div class="txt"><div class="word rv">From private viewing to delivery</div>
+  <ol class="steps" id="steps"><li><span>01</span>Meet</li><li><span>02</span>Reserve</li><li><span>03</span>Follow</li><li><span>04</span>Receive</li></ol>
+  <a class="cta" href="#experience">Book a private viewing</a></div>
+</section>
+
+<section class="enc chapter" id="encounters" aria-label="The encounters">
+ <div class="head"><div class="word rv">Events &amp; encounters</div></div>
+ <div class="encg">
+  <a class="ev rv" href="./"><div class="pic"><div class="brief"><span>Media brief · to shoot</span><strong>Deauville, save the date</strong><ul><li><b>Subject:</b> the Normandy coast at dawn, an MHP watch on the burnt-orange suede cushion in the foreground.</li><li><b>Format:</b> 16:9 hero for the event page + 9:16 teaser.</li><li><b>Why:</b> one image for the site, the invitation and the Meta Ads landing page.</li></ul></div></div><span>Deauville · 11–13 June 2027</span><b>An encounter for independent watchmaking</b></a>
+  <a class="ev rv" href="./"><div class="pic"><video autoplay muted loop playsinline preload="metadata" poster="media/117e890337d1.jpg" aria-label="Jules Legoubin and the MHP polo team on the field"><source src="media/32e0ed58d6e2.mp4" type="video/mp4"></video></div><span>On the polo field · Grand Polo Jules Legoubin, 25 pieces</span><b>Jules Legoubin × MHP</b></a>
+  <a class="ev rv" href="./"><div class="pic"><div class="brief"><span>Media brief · to shoot</span><strong>Grand Prix edition, on the track</strong><ul><li><b>Subject:</b> the watch on the wrist of Adrien Closmenil, in the pit lane, gloved hand on the wheel.</li><li><b>Format:</b> 4:5 photo + 15 s vertical video.</li><li><b>Why:</b> the endurance community is a key market for MHP; it proves the edition is real.</li></ul></div></div><span>On the track · Grand Prix · 25 pieces</span><b>Adrien Closmenil × MHP</b></a>
+  <a class="ev rv" href="#experience"><div class="pic"><img src="media/92d80dd87890.jpg" alt="Place Vendôme, a few steps from the MHP showroom" loading="lazy"></div><span>Paris · by appointment</span><b>The showroom</b></a>
+ </div>
+ <div class="past rv"><span>Past encounters</span><p>Dubai Watch Week · 2025</p><p>Rétromobile, Paris, with Mercedes-Benz France · 2026</p><p>Time to Watches, Geneva · 14–19 April 2026</p></div>
+</section>
+
+
+<section class="log guilloche" aria-label="Le carnet de bord">
+ <div class="word rv">Le carnet de bord</div>
+ <form class="form rv" onsubmit="return false"><input type="email" placeholder="Your email" aria-label="Your email"><button type="submit">Join</button></form>
+</section>
+</main>
+
+<footer>
+ <div class="fcols">
+  <div><h4>Watches</h4><a href="our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html">Grand Classic Atelier Gold · yellow gold</a><a href="./">Grand Classic Atelier Gold · white gold</a><a href="./">Grand Classic Atelier · steel</a><a href="./">Grand Polo</a><a href="./">Grand Polo Jules Legoubin</a><a href="./">Accessories</a></div>
+  <div><h4>The maison</h4><a href="./">Our story</a><a href="./">Our artisans</a><a href="./">Adrien Closmenil × MHP</a><a href="./">Jules Legoubin × MHP</a><a href="#encounters">Events</a><a href="./">News</a></div>
+  <div><h4>Services</h4><a href="#experience">Private viewing</a><a href="./">Warranty</a><a href="./">Engagement &amp; sécurité</a><a href="./">After-sales service</a><a href="./">FAQ</a></div>
+  <div><h4>Points of sale</h4><a href="#experience">30 Rue Danielle Casanova, 75002 Paris</a><a href="./">Caen</a><a href="https://www.instagram.com/mhp.horlogerie">Instagram</a><a href="https://www.linkedin.com/company/maison-horlogère-palmer/" rel="noopener">LinkedIn</a></div>
+ </div>
+ <div class="ftrust"><span>100% authentic piece · Engagement &amp; sécurité</span><span>5-year warranty on the movement</span><span>Points of sale: Paris &amp; Caen</span></div>
+ <div class="fnote" id="trust">Concept proposal prepared for MHP by its digital marketing consultants. Product, macro, artisan photos, craft, polo and Paris films: MHP. Images marked as AI are mood references only.</div>
+</footer>
+
+
+
+<script>
+// mega menu
+const megas=document.querySelectorAll('.mega'),btns=document.querySelectorAll('.mbtn'),wide=()=>matchMedia('(min-width:1101px)').matches;
+const closeAll=()=>{megas.forEach(m=>m.hidden=true);btns.forEach(b=>b.setAttribute('aria-expanded','false'))};
+btns.forEach(b=>{const p=document.getElementById(b.dataset.p);const open=()=>{closeAll();p.hidden=false;b.setAttribute('aria-expanded','true')};
+ b.addEventListener('click',e=>{e.stopPropagation();(!p.hidden&&!wide())?closeAll():open()});b.addEventListener('mouseenter',()=>{if(wide())open()})});
+document.getElementById('hdr').addEventListener('mouseleave',()=>{if(wide())closeAll()});
+document.addEventListener('click',e=>{if(!e.target.closest('.mega'))closeAll()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAll()});
+document.querySelector('.burger').addEventListener('click',e=>{e.stopPropagation();document.getElementById('mainnav').classList.toggle('open')});
+// scroll-driven motion
+const hd=document.getElementById('hdr'),craft=document.getElementById('ch1'),hrs=document.getElementById('hours'),steps=[...document.querySelectorAll('#steps li')];
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function tick(){const y=scrollY,H=document.documentElement.scrollHeight-innerHeight;hd.classList.toggle('small',y>60);
+ const r=craft.getBoundingClientRect(),k=Math.min(1,Math.max(0,-r.top/(r.height-innerHeight)));
+ const si4=Math.min(3,Math.floor(k*4));document.querySelectorAll('.craft .sig').forEach((m,i)=>{m.classList.toggle('on',i===si4);if(!reduce)m.style.setProperty('--z',(1.18-((k*4)%1)*.18).toFixed(3))});document.querySelectorAll('#sigs li').forEach((l,i)=>l.classList.toggle('lit',i===si4));hrs.textContent=['I','II','III','IV'][si4];
+ }
+addEventListener('scroll',()=>{tick();if(wide())closeAll()},{passive:true});tick();
+// drag the rail
+const rail=document.getElementById('rail');let down=false,sx,sl;rail.addEventListener('mousedown',e=>{down=true;sx=e.pageX;sl=rail.scrollLeft});addEventListener('mouseup',()=>down=false);rail.addEventListener('mousemove',e=>{if(down){e.preventDefault();rail.scrollLeft=sl-(e.pageX-sx)}});
+// reveal
+const rv=document.querySelectorAll('.rv,.ref,.who');rv.forEach(el=>{el.classList.add('rv');const i=[...el.parentElement.children].indexOf(el);el.style.transitionDelay=Math.min(i,5)*.08+'s'});
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});rv.forEach(el=>io.observe(el))}else rv.forEach(el=>el.classList.add('in'));
+// experience: one step at a time, the image follows the step
+const pics=[...document.querySelectorAll('#exppic>img,#exppic>video')];let si=0,st=null;
+const show=i=>{si=i;steps.forEach((s,k)=>s.classList.toggle('lit',k===i));pics.forEach((m,k)=>m.classList.toggle('on',k===i))};
+show(0);steps.forEach((s,i)=>s.addEventListener('mouseenter',()=>{show(i);clearTimeout(st);st=null}));
+new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting&&!st){const tick=()=>{st=setTimeout(()=>{show((si+1)%4);tick()},si===0?10000:3200)};tick()}if(!e.isIntersecting){clearTimeout(st);st=null}}),{threshold:.4}).observe(document.getElementById('experience'));
+// mega menu: hovering a name highlights its photo (Cartier-style)
+document.querySelectorAll('.mcol a[data-k]').forEach(a=>{const g=a.closest('.mwrap').querySelector('.mgrid');const t=g.querySelector('.mt[data-k="'+a.dataset.k+'"]');
+ a.addEventListener('mouseenter',()=>{if(t){t.classList.add('hot');g.classList.add('dim')}});a.addEventListener('mouseleave',()=>{if(t){t.classList.remove('hot');g.classList.remove('dim')}})});
+// collection filter
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('#tabs button').forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('.ref').forEach(r=>r.classList.toggle('hide',!!b.dataset.f&&r.dataset.c!==b.dataset.f));document.getElementById('rail').scrollTo({left:0,behavior:'smooth'})}));
+// films play only when visible
+const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){v.play().catch(()=>{})}else v.pause()}),{threshold:.35});
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)document.querySelectorAll('.g3 video').forEach(v=>vio.observe(v));
+</script>
+
+</body></html>
