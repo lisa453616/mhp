@@ -14,18 +14,12 @@ header{display:flex;align-items:center;justify-content:space-between;padding:22p
 nav a{margin-left:20px;white-space:nowrap;color:var(--ink);text-decoration:none;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
 .icons{font-size:11px;letter-spacing:.14em;color:var(--muted)}
 .turntable{background:#000;display:flex;align-items:center;justify-content:center;height:640px;position:relative;border-bottom:1px solid var(--line)}
-.tag{position:absolute;top:18px;left:56px;font-size:10px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase}
 .product{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;padding:48px 56px 56px}
 .crumb{font-size:13px;color:#d8d1c5;margin-bottom:18px}
-.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
 h1{font-family:'Ibarra Real Nova',serif;font-weight:500;font-size:40px;line-height:1.12;margin:12px 0 10px;letter-spacing:.01em}
 .ref{font-size:13px;color:#d8d1c5}
 .variant{display:inline-block;margin-top:10px;font-size:12px;color:var(--gold);border-bottom:1px solid var(--gold);text-decoration:none}
 .lead{font-size:16px;color:#d8d1c5;margin-top:22px;max-width:620px}
-.keyfacts{margin-top:28px;border:1px solid var(--line);background:var(--bg2);padding:20px 24px;max-width:620px}
-.keyfacts h2{font-family:Inter;font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.keyfacts li{list-style:none;font-size:13.5px;padding:5px 0;border-bottom:1px solid var(--line);color:#ddd6ca}
-.keyfacts li:last-child{border:0}
 .reassure{margin-top:22px;border-top:1px solid var(--line);padding-top:14px}
 .reassure li{list-style:none;font-size:12.5px;color:#cfc7b8;padding:5px 0}
 .reassure li b{color:var(--gold);font-weight:500}
@@ -40,11 +34,9 @@ h1{font-family:'Ibarra Real Nova',serif;font-weight:500;font-size:40px;line-heig
 .cta{display:block;width:100%;padding:17px;border:1px solid var(--gold);background:var(--gold);color:#020202;font:500 12px Inter;letter-spacing:.26em;text-transform:uppercase;margin-bottom:10px}
 .cta2{background:transparent;color:var(--ink);border-color:var(--ink)}
 .reassure{font-size:12px;color:var(--muted);margin-top:14px;line-height:2}
-.stock{color:var(--gold)}
 section{padding:72px 56px;border-top:1px solid var(--line)}
 section.alt{background:var(--bg2)}
 h2.s{font-family:'Ibarra Real Nova',serif;font-weight:500;font-size:32px;margin-bottom:8px}
-.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .detail{grid-template-columns:1fr !important;max-width:760px;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:40px}
 .ph{height:280px;background:linear-gradient(135deg,#1a1714,#0a0908);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#6d665c}
 .detail p{color:#d0c9bd;max-width:520px}
@@ -60,7 +52,6 @@ td:first-child{width:32%;color:var(--muted);font-size:11px;letter-spacing:.14em;
 details{border-bottom:1px solid var(--line);padding:18px 0;max-width:900px}
 summary{font-family:'Ibarra Real Nova',serif;font-size:22px;cursor:pointer;list-style:none}
 details p{margin-top:8px;color:#d0c9bd}
-.confirm{color:var(--note);font-size:11px;font-weight:500}
 .related{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
 .related div{background:var(--bg3);border:1px solid var(--line);padding:22px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
 footer{padding:28px 56px;font-size:11px;color:var(--muted);border-top:1px solid var(--line)}
@@ -99,11 +90,7 @@ nav{display:flex;align-items:center}
 .js .reveal .media img{transform:scale(1.08)}.js .reveal.in .media img{transform:scale(1)}
 .film{position:relative;padding:0;height:78vh;min-height:420px;overflow:hidden;background:#000}
 .film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85}
-.filmtxt{position:absolute;left:56px;bottom:56px}
-.filmline{font-family:'Ibarra Real Nova',serif;font-size:44px;line-height:1.1;color:var(--ink);max-width:560px}
-@media(max-width:900px){.detail.split,.detail.split.rev{grid-template-columns:1fr !important;gap:28px}.detail.split.rev .media{order:2}.media img,.detail.tall .media img{height:320px}.filmline{font-size:30px}.filmtxt{left:24px;bottom:28px}}
-.brandtop{display:flex;justify-content:center;padding:28px 0 18px;background:var(--bg)}
-.brandtop img{height:92px;width:auto;display:block}
+@media(max-width:900px){.detail.split,.detail.split.rev{grid-template-columns:1fr !important;gap:28px}.detail.split.rev .media{order:2}.media img,.detail.tall .media img{height:320px}}
 .logo img{height:34px;width:auto;display:block}
 
 @media(min-width:901px){.detail.split.why{grid-template-columns:1.45fr 1fr !important}}
@@ -113,23 +100,7 @@ nav{display:flex;align-items:center}
 body *{text-transform:none !important;letter-spacing:normal !important}
 td:first-child,.card span,.edition{font-size:13px !important}
 </style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Grand Classic Atelier Gold",
-  "brand": {"@type": "Brand", "name": "MHP"},
-  "description": "18K yellow-gold chronograph watch with a hand-guilloché black dial and a manual monopusher chronograph. Limited edition of 10 pieces.",
-  "image": "chronograph-watch-gcyg11chm-mhp.webp",
-  "material": "18K yellow gold",
-  "offers": {
-    "@type": "Offer",
-    "price": "42000",
-    "priceCurrency": "EUR",
-    "availability": "https://schema.org/LimitedAvailability"
-  }
-}
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Product", "@id": "https://lisa453616.github.io/mhp/our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html#product", "name": "Grand Classic Atelier Gold", "url": "https://lisa453616.github.io/mhp/our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html", "sku": "GCYG11CHM", "mpn": "GCYG11CHM", "brand": {"@type": "Brand", "name": "MHP"}, "manufacturer": {"@id": "https://lisa453616.github.io/mhp/#org"}, "description": "18K yellow-gold monopusher chronograph watch, 41 mm, with a hand-guilloché black 18K gold dial and the manual calibre GCS01CHM (60-hour power reserve). Limited edition of 10 pieces.", "image": ["https://lisa453616.github.io/mhp/media/56c165c4e9e9.webp"], "material": "18K yellow gold", "color": "Yellow gold, black dial", "category": "Chronograph watch", "offers": {"@type": "Offer", "url": "https://lisa453616.github.io/mhp/our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html", "price": "42000", "priceCurrency": "EUR", "availability": "https://schema.org/LimitedAvailability", "itemCondition": "https://schema.org/NewCondition", "seller": {"@id": "https://lisa453616.github.io/mhp/#org"}}}, {"@type": "Organization", "@id": "https://lisa453616.github.io/mhp/#org", "name": "MHP Horlogerie", "alternateName": "Maison Horlogère Palmer", "url": "https://mhp-horlogerie.com"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://lisa453616.github.io/mhp/"}, {"@type": "ListItem", "position": 2, "name": "Our watches", "item": "https://lisa453616.github.io/mhp/#ch2"}, {"@type": "ListItem", "position": 3, "name": "Grand Classic Atelier", "item": "https://lisa453616.github.io/mhp/#ch2"}, {"@type": "ListItem", "position": 4, "name": "18K yellow gold", "item": "https://lisa453616.github.io/mhp/our-watches/grand-classic-atelier/grand-classic-atelier-gold-18k-yellow-gold-chronograph-watch.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the MHP Grand Classic Atelier Gold?", "acceptedAnswer": {"@type": "Answer", "text": "A limited-edition chronograph watch from MHP, an independent French watch brand: 41 mm 18K yellow-gold case, hand-guilloché 18K gold dial, manual monopusher chronograph. Only 10 pieces."}}, {"@type": "Question", "name": "How does a monopusher chronograph work?", "acceptedAnswer": {"@type": "Answer", "text": "One single pusher controls it: press once to start, again to stop, a third time to reset. Here: manual calibre MHP GCS01CHM, 4 Hz, 60-hour power reserve."}}, {"@type": "Question", "name": "What is a hand-guilloché dial?", "acceptedAnswer": {"@type": "Answer", "text": "A dial engraved by hand, line by line, on guilloché machines 50 to 100 years old. The \"grains de riz\" pattern takes 6 to 10 hours per dial. Here in 18K gold, black rhodium-plated."}}, {"@type": "Question", "name": "Can I see the watch before I buy it?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can book a private viewing at the Paris showroom, 30 Rue Danielle Casanova, or at the workshop in Normandy, by appointment."}}, {"@type": "Question", "name": "How many pieces are made?", "acceptedAnswer": {"@type": "Answer", "text": "The yellow-gold Grand Classic Atelier Gold is limited to ten pieces."}}, {"@type": "Question", "name": "What is the price?", "acceptedAnswer": {"@type": "Answer", "text": "€42,000 including VAT, as listed on the MHP product page."}}]}]}</script>
 </head>
 <body>
 <div class="banner">Concept proposal for MHP · Group 2</div>
@@ -214,12 +185,12 @@ td:first-child,.card span,.edition{font-size:13px !important}
 <section class="alt">
  <div class="related"><div>Grand Classic Atelier · 18K white gold</div><div>Grand Classic Atelier · steel</div><div>Grand Polo · Jules Legoubin titanium</div></div>
 </section>
-<footer>Structured data on this page: Product + Offer (name, brand, image, SKU, price, priceCurrency, availability) matching the visible text. hreflang EN/FR + canonical. Concept proposal prepared for MHP by its digital marketing consultants. Crown and dial photos © Tanguy Delahaye. Film and other images: MHP.</footer>
+<footer>Concept proposal prepared for MHP by its digital marketing consultants. Crown and dial photos © Tanguy Delahaye. Film and other images: MHP.</footer>
 <script>
 document.querySelectorAll('.ddb').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();const d=b.parentElement,o=d.classList.toggle('open');b.setAttribute('aria-expanded',o);document.querySelectorAll('.dd').forEach(x=>{if(x!==d)x.classList.remove('open')})}));
 document.addEventListener('click',()=>document.querySelectorAll('.dd').forEach(x=>x.classList.remove('open')));
 document.querySelector('.burger').addEventListener('click',()=>document.getElementById('mainnav').classList.toggle('open'));
-const rv=document.querySelectorAll('.product > div, section .kicker, section h2.s, .filmtxt, .detail, .sig, .pvlead, .steps li, .card, table, details, .related div');
+const rv=document.querySelectorAll('.product > div, section h2.s, .detail, .sig, .pvlead, .steps li, .card, table, details, .related div');
 rv.forEach((el,i)=>{el.classList.add('reveal');const sib=el.parentElement?[...el.parentElement.children].indexOf(el):0;el.style.transitionDelay=(Math.min(sib,4)*0.12)+'s'});
 if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0.15});rv.forEach(el=>io.observe(el))}else{rv.forEach(el=>el.classList.add('in'))}
 </script>
